@@ -89,67 +89,62 @@ public class CommandList {
   }
 
   // Data Command Method
-  public static void cData() {
+  public static void cSave() {
 
-    // Data
-    if (CommandCompiler.commandArgs[0].equals("data")) {
+    // Save
+    if (CommandCompiler.commandArgs[0].equals("save")) {
 
-      // Save
-      if (CommandCompiler.commandArgs[1].equals("save")) {
+      // OUTPUT
+      // Create save file
+      try {
 
-        // OUTPUT
-        // Create save file
-        try {
+        File saveFiles = new File("jagac.save");
 
-          File saveFiles = new File("jagac.save");
+        if (saveFiles.createNewFile()) {
 
-          if (saveFiles.createNewFile()) {
+          saveOutput = saveOutput;
 
-            saveOutput = saveOutput;
+        } else {
 
-          } else {
-
-            saveOutput = saveOutput + "\n> Rewriting existing save file";
-
-          }
-
-        } catch (IOException e) {
-
-          System.out.println("uh oh error go brrrrrrrrrrrrrrrrrrr");
-          e.printStackTrace();
+          saveOutput = saveOutput + "\n> Rewriting existing save file";
 
         }
 
-        // Save Data
-        try {
+      } catch (IOException e) {
 
-          ItemAPI.defineItems("save");
-          FileWriter saveData = new FileWriter("jagac.save");
-
-          // Save Bank
-          saveData.write(Resources.bank[0] + "\n");
-          saveData.write(Resources.bank[1] + "\n");
-
-          // Save Cheese
-          saveData.write(Resources.currency[0] + "\n");
-
-          // Save Items
-          saveData.write(saveInfo);
-
-          saveData.close();
-          saveOutput = saveOutput + "\n> Saved the data";
-
-        } catch (IOException e) {
-
-          System.out.println("uh oh an error occured pog");
-          e.printStackTrace();
-
-        }
-
-        // Sent Output
-        UI.outputText("Saved Game Data", saveOutput);
+        System.out.println("uh oh error go brrrrrrrrrrrrrrrrrrr");
+        e.printStackTrace();
 
       }
+
+      // Save Data
+      try {
+
+        ItemAPI.defineItems("save");
+        FileWriter saveData = new FileWriter("jagac.save");
+
+        // Save Bank
+        saveData.write(Resources.bank[0] + "\n");
+        saveData.write(Resources.bank[1] + "\n");
+
+        // Save Cheese
+        saveData.write(Resources.currency[0] + "\n");
+
+        // Save Items
+        saveData.write(saveInfo);
+
+        saveData.close();
+        saveOutput = saveOutput + "\n> Saved the data";
+
+      } catch (IOException e) {
+
+        System.out.println("uh oh an error occured pog");
+        e.printStackTrace();
+
+      }
+
+      // Sent Output
+      UI.outputText("Saved Game Data", saveOutput);
 
     }
 

@@ -19,12 +19,6 @@ public class LoadData {
       String loadOutput = "";
       while (saveReader.hasNextLine()) {
 
-        if (idLoad == 16) {
-
-          return;
-
-        }
-
         if (idLoad == -3) {
 
           Resources.bank[0] = Double.parseDouble(saveReader.nextLine());

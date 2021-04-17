@@ -21,7 +21,7 @@ public class CommandCompiler {
     CommandList.cSell();
     CommandList.cBuy();
     CommandList.cHelp();
-    CommandList.cData();
+    CommandList.cSave();
     CommandList.cBank();
 
   }

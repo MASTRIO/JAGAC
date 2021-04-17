@@ -11,6 +11,8 @@ public class ItemAPI {
   // Define Items
   public static void defineItems(String accessType) {
 
+    // TODO: Remove Icons because gradle doesn't like unicode i guess
+
     newItem(accessType, "shiny_gems", "Shiny Gems", 0, "✨💎", 10, 15);
     newItem(accessType, "cheese_jumpers", "Cheese Jumpers", 1, "🧀🥋", 40, 45);
     newItem(accessType, "blue_cheese", "Blue Cheese", 2, "Ƀ🧀", 95, 100);

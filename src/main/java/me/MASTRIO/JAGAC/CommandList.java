@@ -82,7 +82,7 @@ public class CommandList {
     if (CommandCompiler.commandArgs[0].equals("help")) {
 
       // OUTPUT
-      UI.outputText("Showing the user the command options", "> help    (Shows this list)\n> balance   (Shows your money)\n> inventory    (Shows your inventory)\n> sell <item> <amount>   (Sell your items)\n> buy <item> <amount>   (Buy items)\n> data <save/load>   (Saves/loads game data)\n> bank <idk>  (Info)");
+      UI.outputText("Showing the user the command options", "> help    (Shows this list)\n> balance   (Shows your money)\n> inventory    (Shows your inventory)\n> sell <item> <amount>   (Sell your items)\n> buy <item> <amount>   (Buy items)\n> save   (Saves the game, duh)\n> bank <add/stats> <amount to add>  (Bank related stuff)");
 
     }
 
@@ -153,7 +153,7 @@ public class CommandList {
   // Bank Command Method
   public static void cBank() {
 
-    // TODO: Save Data
+    // TODO: MATH (eww)
 
     // Bank
     if (CommandCompiler.commandArgs[0].equals("bank")) {

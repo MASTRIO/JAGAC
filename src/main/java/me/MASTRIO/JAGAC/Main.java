@@ -7,7 +7,7 @@ class Main {
   // Variables
   static int[] version = {
     0, // Major
-    4, // Minor
+    5, // Minor
     0 // Patch
   };
   static int maxRan = 10;
@@ -23,15 +23,21 @@ class Main {
     // Debug Mode?
     try {
 
+      // If debug mode enabled
       if (args[0].equals("debug")) {
 
+        // OUTPUT
         isDebugMode = true;
+
+        UI.outputText("Debug Mode enabled", "");
 
       }
 
+    // If Debug mode is disabled
     } catch (Exception e) {
 
-      System.out.println("Loading in normal mode");
+      // OUTPUT
+      UI.outputText("Debug Mode disabled", "Debug mode disbled");
 
     }
 
@@ -66,11 +72,7 @@ class Main {
     gui.makeUI();
 
     // Load game data
-    CommandCompiler.commandArgs = new String[]{
-      "data",
-      "load"
-    };
-    CommandList.cData();
+    LoadData.load();
 
     // Welcomes the user
     if (isDebugMode) {

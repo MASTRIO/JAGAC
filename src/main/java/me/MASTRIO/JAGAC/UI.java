@@ -75,11 +75,17 @@ public class UI implements ActionListener {
   // Output Text Method
   public static void outputText(String consoleMessage, String UIoutput) {
 
+    // OUTPUT
     LocalDateTime now = LocalDateTime.now();
 
     output = UIoutput;
 
-    System.out.println("[" + (time.format(localTime)) + " | CommandOutput]@>>> " + consoleMessage);
+    // If it is in Debug Mode
+    if (Main.isDebugMode) {
+
+      System.out.println("[" + (time.format(localTime)) + " | CommandOutput]@>>> " + consoleMessage);
+
+    }
 
 
   }

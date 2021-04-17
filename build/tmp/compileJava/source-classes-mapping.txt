@@ -1,5 +1,7 @@
 me/MASTRIO/JAGAC/CommandList.java
  me.MASTRIO.JAGAC.CommandList
+me/MASTRIO/JAGAC/LoadData.java
+ me.MASTRIO.JAGAC.LoadData
 me/MASTRIO/JAGAC/Resources.java
  me.MASTRIO.JAGAC.Resources
 me/MASTRIO/JAGAC/UI.java

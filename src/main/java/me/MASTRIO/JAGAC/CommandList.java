@@ -13,8 +13,6 @@ public class CommandList {
   // Variables
   static String saveOutput = "Attempting to save the game:";
   static String saveInfo = "";
-  static int idLoad = 0;
-  static String loadOutput = "";
 
   // COMMANDS
   // Inventory Command Method
@@ -127,7 +125,17 @@ public class CommandList {
 
           ItemAPI.defineItems("save");
           FileWriter saveData = new FileWriter("jagac.save");
-          saveData.write(Resources.currency[0] + "\n" + saveInfo);
+
+          // Save Bank
+          saveData.write(Resources.bank[0] + "\n");
+          saveData.write(Resources.bank[1] + "\n");
+
+          // Save Cheese
+          saveData.write(Resources.currency[0] + "\n");
+
+          // Save Items
+          saveData.write(saveInfo);
+
           saveData.close();
           saveOutput = saveOutput + "\n> Saved the data";
 
@@ -140,46 +148,6 @@ public class CommandList {
 
         // Sent Output
         UI.outputText("Saved Game Data", saveOutput);
-
-      }
-      // Load
-      if (CommandCompiler.commandArgs[1].equals("load")) {
-
-        // OUTPUT
-        idLoad = -1;
-
-        try {
-
-          File saveFiles = new File("jagac.save");
-          Scanner saveReader = new Scanner(saveFiles);
-
-          while (saveReader.hasNextLine()) {
-
-            if (idLoad == -1) {
-
-              Resources.currency[0] = Integer.parseInt(saveReader.nextLine());
-
-            } else {
-
-              Resources.items[idLoad] = Integer.parseInt(saveReader.nextLine());
-              loadOutput = loadOutput + Resources.items[idLoad] + "\n";
-
-            }
-
-            idLoad++;
-
-          }
-
-          UI.outputText("Loading Game Data", "Loading Game Data:\n" + loadOutput);
-
-          saveReader.close();
-
-        } catch (FileNotFoundException e) {
-
-          System.out.println("Errors are bad");
-          e.printStackTrace();
-
-        }
 
       }
 

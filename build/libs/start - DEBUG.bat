@@ -1,1 +1,1 @@
-javaw -jar JustAnotherGameAboutCheese-0.4.0.jar debug
+javaw -jar JustAnotherGameAboutCheese-0.5.0.jar debug

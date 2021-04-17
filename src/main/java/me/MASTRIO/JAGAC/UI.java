@@ -76,8 +76,6 @@ public class UI implements ActionListener {
   public static void outputText(String consoleMessage, String UIoutput) {
 
     // OUTPUT
-    LocalDateTime now = LocalDateTime.now();
-
     output = UIoutput;
 
     // If it is in Debug Mode

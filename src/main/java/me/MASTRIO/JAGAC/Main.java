@@ -85,6 +85,9 @@ class Main {
 
     }
 
+    System.out.println(UI.minute.format(UI.localTime));
+    System.out.println(UI.localTime);
+
     // Start Game Tick
     Tick.gameTick();
 

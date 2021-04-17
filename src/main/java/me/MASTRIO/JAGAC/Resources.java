@@ -19,7 +19,7 @@ public class Resources {
   static int[] items = {
     0,
     0,
-    0,
+    50,
     0,
     0,
     0,

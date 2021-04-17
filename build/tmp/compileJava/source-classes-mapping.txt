@@ -1,16 +1,16 @@
-me/MASTRIO/JAGAC/Main.java
- me.MASTRIO.JAGAC.Main
-me/MASTRIO/JAGAC/LoadData.java
- me.MASTRIO.JAGAC.LoadData
-me/MASTRIO/JAGAC/Resources.java
- me.MASTRIO.JAGAC.Resources
-me/MASTRIO/JAGAC/UI.java
- me.MASTRIO.JAGAC.UI
-me/MASTRIO/JAGAC/Tick.java
- me.MASTRIO.JAGAC.Tick
-me/MASTRIO/JAGAC/CommandList.java
- me.MASTRIO.JAGAC.CommandList
-me/MASTRIO/JAGAC/CommandCompiler.java
- me.MASTRIO.JAGAC.CommandCompiler
 me/MASTRIO/JAGAC/ItemAPI.java
  me.MASTRIO.JAGAC.ItemAPI
+me/MASTRIO/JAGAC/Resources.java
+ me.MASTRIO.JAGAC.Resources
+me/MASTRIO/JAGAC/CommandList.java
+ me.MASTRIO.JAGAC.CommandList
+me/MASTRIO/JAGAC/LoadData.java
+ me.MASTRIO.JAGAC.LoadData
+me/MASTRIO/JAGAC/UI.java
+ me.MASTRIO.JAGAC.UI
+me/MASTRIO/JAGAC/CommandCompiler.java
+ me.MASTRIO.JAGAC.CommandCompiler
+me/MASTRIO/JAGAC/Main.java
+ me.MASTRIO.JAGAC.Main
+me/MASTRIO/JAGAC/Tick.java
+ me.MASTRIO.JAGAC.Tick

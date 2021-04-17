@@ -153,7 +153,7 @@ public class CommandList {
   // Bank Command Method
   public static void cBank() {
 
-    // TODO: MATH (eww)
+    // TODO: MATH (eww) (put in Tick.java)
 
     // Bank
     if (CommandCompiler.commandArgs[0].equals("bank")) {

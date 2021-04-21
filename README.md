@@ -1,5 +1,5 @@
 # Just Another Game About Cheese
-(or JAGAC for short)
+(JAGAC)
 
 
 A Java Revamp of a game I started making in Python

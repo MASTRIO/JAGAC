@@ -1,25 +1,23 @@
-// Package
-package me.MASTRIO.JAGAC;
+package com.github.MASTRIO.JAGAC;
 
-// Class
 public class Resources {
 
   // Bank
-  static double[] bank = {
+  public static double[] bank = {
     0, // Blue Cheese in Bank
     0.0 // Multiplier
   };
 
   // Currency
-  static int[] currency = {
+  public static int[] currency = {
     0 // Cheese
   };
 
   // Items
-  static int[] items = {
+  public static int[] items = {
     0,
     0,
-    50,
+    0,
     0,
     0,
     0,

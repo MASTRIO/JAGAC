@@ -1,8 +1,8 @@
-// Package
-package me.MASTRIO.JAGAC;
+package com.github.MASTRIO.JAGAC;
 
-// Main Class
-class Main {
+import com.github.MASTRIO.JAGAC.data.Load;
+
+public class Main {
 
   // Variables
   static int[] version = {
@@ -10,33 +10,33 @@ class Main {
     5, // Minor
     0 // Patch
   };
-  static int maxRan = 10;
+  static int maxRan = 11;
   static int minRan = 1;
   static int randomNumber;
   static String splashText;
   static String title;
-  static boolean isDebugMode = false;
+  public static boolean isDebugMode = false;
+
+  // Events
+  static boolean[] events = {
+    false // TODO: Give this a use lol
+  };
 
   // Main Method
   public static void main(String[] args) {
 
-    // Debug Mode?
+    // Debug Mode
     try {
 
-      // If debug mode enabled
       if (args[0].equals("debug")) {
 
-        // OUTPUT
         isDebugMode = true;
-
-        UI.outputText("Debug Mode enabled", "");
+        UI.outputText("Debug Mode enabled", "doogboog mode nabled");
 
       }
 
-    // If Debug mode is disabled
     } catch (Exception e) {
 
-      // OUTPUT
       UI.outputText("Debug Mode disabled", "Debug mode disbled");
 
     }
@@ -63,18 +63,18 @@ class Main {
       splashText = "You know what would be cool? cuz I don't";
     } else if (randomNumber == 10) {
       splashText = "Yo you got splash text 10!";
+    } else if (randomNumber == 11) {
+      splashText = "I am NOT short";
     }
 
     title = "JAGAC v" + version[0] + "." + version[1] + "." + version[2] + " | " + splashText;
 
-    // Call the 'makeUI' method
-    UI gui = new UI();
-    gui.makeUI();
+    // Make the UI
+    UI.makeUI();
 
-    // Load game data
-    LoadData.load();
+    // Load game me.MASTRIO.JAGAC.data
+    Load.load();
 
-    // Welcomes the user
     if (isDebugMode) {
 
       UI.outputText("Welcome back to the game", "Just Another Game About Cheese\nv" + version[0] + "." + version[1] + "." + version[2] + "\n\nDEBUG MODE");
@@ -84,9 +84,6 @@ class Main {
       UI.outputText("Welcome back to the game", "Just Another Game About Cheese\nv" + version[0] + "." + version[1] + "." + version[2]);
 
     }
-
-    System.out.println(UI.minute.format(UI.localTime));
-    System.out.println(UI.localTime);
 
     // Start Game Tick
     Tick.gameTick();

@@ -1,14 +1,17 @@
-package me.MASTRIO.JAGAC;
+package com.github.MASTRIO.JAGAC.data;
 
+import com.github.MASTRIO.JAGAC.Main;
+import com.github.MASTRIO.JAGAC.Resources;
+import com.github.MASTRIO.JAGAC.UI;
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.Scanner;
 
-public class LoadData {
+public class Load {
 
   public static void load() {
 
-    // OUTPUT
+    // Variables
     int idLoad = -3;
 
     try {
@@ -18,6 +21,12 @@ public class LoadData {
 
       String loadOutput = "";
       while (saveReader.hasNextLine()) {
+
+        if (idLoad == 16) {
+
+          return;
+
+        }
 
         if (idLoad == -3) {
 
@@ -42,16 +51,12 @@ public class LoadData {
 
       }
 
-      // If Debug Mode
       if (Main.isDebugMode) {
 
-        // OUTPUT
         UI.outputText("Loading Game Data", "Loading Game Data:\n" + loadOutput);
 
-        // If not Debug Mode
       } else {
 
-        // OUTPUT
         UI.outputText("Loading Game Data", "Loading Game Data");
 
       }

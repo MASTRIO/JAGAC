@@ -20,7 +20,7 @@ test {
 
 jar {
   manifest {
-    attributes "Main-Class": "me.MASTRIO.JAGAC.Main"
+    attributes "Main-Class": "com.github.MASTRIO.JAGAC.Main"
   }
 
   from {

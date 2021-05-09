@@ -1,6 +1,6 @@
 package com.github.MASTRIO.JAGAC;
 
-import com.github.MASTRIO.JAGAC.data.Load;
+import com.github.MASTRIO.JAGAC.Data.Load;
 
 public class Main {
 

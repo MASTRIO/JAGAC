@@ -1,6 +1,6 @@
 package com.github.MASTRIO.JAGAC;
 
-import com.github.MASTRIO.JAGAC.commands.Compiler;
+import com.github.MASTRIO.JAGAC.Commands.Compiler;
 
 public class Tick {
 

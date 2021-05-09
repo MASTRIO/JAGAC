@@ -1,4 +1,4 @@
-package com.github.MASTRIO.JAGAC.data;
+package com.github.MASTRIO.JAGAC.Data;
 
 import com.github.MASTRIO.JAGAC.Main;
 import com.github.MASTRIO.JAGAC.Resources;

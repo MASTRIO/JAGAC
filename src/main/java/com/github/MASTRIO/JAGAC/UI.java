@@ -1,7 +1,7 @@
 package com.github.MASTRIO.JAGAC;
 
-import com.github.MASTRIO.JAGAC.commands.Compiler;
-import com.github.MASTRIO.JAGAC.data.Save;
+import com.github.MASTRIO.JAGAC.Commands.Compiler;
+import com.github.MASTRIO.JAGAC.Data.Save;
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
@@ -22,7 +22,7 @@ public class UI extends Component implements ActionListener {
 
   // UI variables
   static JFrame frame;
-  static JPanel panel;
+  public static JPanel panel;
   static JTextArea outputPane;
   static JTextField commandInputBox;
   static JButton runCommandButton;
@@ -123,7 +123,11 @@ public class UI extends Component implements ActionListener {
     if (e.getActionCommand().equals(Actions.Run.name())) {
 
       command = commandInputBox.getText();
-      Compiler.compileCommand();
+      try {
+        Compiler.compileCommand();
+      } catch (InterruptedException interruptedException) {
+        interruptedException.printStackTrace();
+      }
       commandInputBox.setText("");
 
     } else if (e.getActionCommand().equals(Actions.Save.name())) {
@@ -133,7 +137,11 @@ public class UI extends Component implements ActionListener {
     } else if (e.getActionCommand().equals(Actions.VVV.name())) {
 
       command = Compiler.preCommand;
-      Compiler.compileCommand();
+      try {
+        Compiler.compileCommand();
+      } catch (InterruptedException interruptedException) {
+        interruptedException.printStackTrace();
+      }
 
     }
 

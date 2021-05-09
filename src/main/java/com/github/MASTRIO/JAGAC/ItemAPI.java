@@ -1,7 +1,7 @@
 package com.github.MASTRIO.JAGAC;
 
-import com.github.MASTRIO.JAGAC.commands.Compiler;
-import com.github.MASTRIO.JAGAC.data.Save;
+import com.github.MASTRIO.JAGAC.Commands.Compiler;
+import com.github.MASTRIO.JAGAC.Data.Save;
 
 public class ItemAPI {
 
@@ -28,7 +28,7 @@ public class ItemAPI {
     newItem(accessType, "child", "Child", 13, 35, 40);
     newItem(accessType, "toy_bears", "Toy Bears", 14, 15, 20);
     newItem(accessType, "moose", "Moose", 15, 25, 30);
-
+    newItem(accessType, "beans", "Beans", 16, 254, 300);
 
   }
 

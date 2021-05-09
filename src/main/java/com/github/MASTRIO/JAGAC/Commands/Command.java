@@ -1,8 +1,8 @@
-package com.github.MASTRIO.JAGAC.commands;
+package com.github.MASTRIO.JAGAC.Commands;
 
 import com.github.MASTRIO.JAGAC.ItemAPI;
 import com.github.MASTRIO.JAGAC.Resources;
-import com.github.MASTRIO.JAGAC.Scavenging;
+import com.github.MASTRIO.JAGAC.Exploring.ExploringUI;
 import com.github.MASTRIO.JAGAC.UI;
 
 public class Command {
@@ -72,13 +72,19 @@ public class Command {
   }
 
   // Scavenge Command
-  public static void cScavenge() {
+  public static void cExplore() throws InterruptedException {
 
-    if (Compiler.commandArgs[0].equals("scavenge")) {
+    if (Compiler.commandArgs[0].equals("explore")) {
 
-      UI.windowFrame[0] = 800;
-      UI.reDraw();
-      Scavenging.addScavengingUI();
+      UI.outputText("Exploring " + Compiler.commandArgs[1] + "km", "Exploring " + Compiler.commandArgs[1] + "km for resources...");
+
+      ExploringUI.distanceToTravel = Integer.parseInt(Compiler.commandArgs[1]);
+      ExploringUI.travelledDistance = 0;
+      ExploringUI.resourcesCollected = 0;
+
+      com.github.MASTRIO.JAGAC.UI.windowFrame[0] = 800;
+      com.github.MASTRIO.JAGAC.UI.reDraw();
+      ExploringUI.addScavengingUI();
 
     }
 
@@ -88,7 +94,6 @@ public class Command {
 
 
   // * Testing Commands
-
   public static void cWidth() {
     if (Compiler.commandArgs[0].equals("width")) {
       UI.windowFrame[0] = 1000;

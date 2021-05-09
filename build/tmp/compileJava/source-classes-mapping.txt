@@ -1,21 +1,23 @@
+com/github/MASTRIO/JAGAC/Resources.java
+ com.github.MASTRIO.JAGAC.Resources
+com/github/MASTRIO/JAGAC/UI.java
+ com.github.MASTRIO.JAGAC.UI
+ com.github.MASTRIO.JAGAC.UI$Actions
+com/github/MASTRIO/JAGAC/ItemAPI.java
+ com.github.MASTRIO.JAGAC.ItemAPI
+com/github/MASTRIO/JAGAC/Exploring/Exploring.java
+ com.github.MASTRIO.JAGAC.Exploring.Exploring
+com/github/MASTRIO/JAGAC/Exploring/ExploringUI.java
+ com.github.MASTRIO.JAGAC.Exploring.ExploringUI
+com/github/MASTRIO/JAGAC/Data/Save.java
+ com.github.MASTRIO.JAGAC.Data.Save
 com/github/MASTRIO/JAGAC/Main.java
  com.github.MASTRIO.JAGAC.Main
 com/github/MASTRIO/JAGAC/Tick.java
  com.github.MASTRIO.JAGAC.Tick
-com/github/MASTRIO/JAGAC/data/Load.java
- com.github.MASTRIO.JAGAC.data.Load
-com/github/MASTRIO/JAGAC/ItemAPI.java
- com.github.MASTRIO.JAGAC.ItemAPI
-com/github/MASTRIO/JAGAC/UI.java
- com.github.MASTRIO.JAGAC.UI
- com.github.MASTRIO.JAGAC.UI$Actions
-com/github/MASTRIO/JAGAC/Resources.java
- com.github.MASTRIO.JAGAC.Resources
-com/github/MASTRIO/JAGAC/commands/Compiler.java
- com.github.MASTRIO.JAGAC.commands.Compiler
-com/github/MASTRIO/JAGAC/data/Save.java
- com.github.MASTRIO.JAGAC.data.Save
-com/github/MASTRIO/JAGAC/commands/Command.java
- com.github.MASTRIO.JAGAC.commands.Command
-com/github/MASTRIO/JAGAC/Scavenging.java
- com.github.MASTRIO.JAGAC.Scavenging
+com/github/MASTRIO/JAGAC/Data/Load.java
+ com.github.MASTRIO.JAGAC.Data.Load
+com/github/MASTRIO/JAGAC/Commands/Command.java
+ com.github.MASTRIO.JAGAC.Commands.Command
+com/github/MASTRIO/JAGAC/Commands/Compiler.java
+ com.github.MASTRIO.JAGAC.Commands.Compiler
